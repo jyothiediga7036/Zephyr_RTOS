@@ -1,0 +1,3 @@
+mainmenu "Generic GPIO application"
+
+source "Kconfig.zephyr"
