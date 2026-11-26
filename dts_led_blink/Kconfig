@@ -1,0 +1,5 @@
+source "Kconfig.zephyr"
+
+config DELAY
+    int "Application delay in milliseconds"
+    default 1000

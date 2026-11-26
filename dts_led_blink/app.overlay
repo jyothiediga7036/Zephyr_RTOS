@@ -1,0 +1,34 @@
+/ {
+    leds {
+        compatible = "gpio-leds";
+
+        orange_led_3: led_3 {
+            gpios = <&gpiod 13 GPIO_ACTIVE_HIGH>;
+            label = "User LD3";
+        };
+
+        green_led_4: led_4 {
+            gpios = <&gpiod 12 GPIO_ACTIVE_HIGH>;
+            label = "User LD4";
+        };
+
+        red_led_5: led_5 {
+            gpios = <&gpiod 14 GPIO_ACTIVE_HIGH>;
+            label = "User LD5";
+        };
+
+        blue_led_6: led_6 {
+            gpios = <&gpiod 15 GPIO_ACTIVE_HIGH>;
+            label = "User LD6";
+        };
+    };
+
+    aliases {
+        led0 = &green_led_4;
+        led1 = &orange_led_3;
+        led2 = &red_led_5;
+        led3 = &blue_led_6;
+
+        sw0 = &user_button;
+    };
+};
